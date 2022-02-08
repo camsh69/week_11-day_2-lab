@@ -56,8 +56,9 @@ public class LibraryTest {
     @Test
     public void canCountByGenre() {
         library.addByGenre(book1.getGenre());
+        library.addByGenre(book1.getGenre());
         library.addByGenre(book2.getGenre());
-        assertEquals(1, library.countByGenre(book1.getGenre()));
+        assertEquals(2, library.countByGenre(book1.getGenre()));
         assertEquals(1, library.countByGenre(book2.getGenre()));
 
     }
